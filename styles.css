@@ -1,0 +1,91 @@
+body {
+  font-family: 'Jura', sans-serif; /* Основной шрифт */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: #1a1a1a;
+}
+
+#root {
+  position: relative;
+  z-index: 10;
+}
+
+.skill-icon {
+  transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
+}
+
+section {
+  position: relative;
+  z-index: 10;
+}
+
+.block-gray-400 {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.typewriter {
+  display: block;
+  width: fit-content;
+  max-width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-right: 0.15em solid #00ff00;
+  white-space: nowrap;
+  animation: 
+    typing 15s infinite,
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  0% { width: 0; }
+  20% { width: 200px; }
+  40% { width: 200px; }
+  60% { width: 385px; }
+  95% { width: 385px; }
+  100% { width: 0px; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #00ff00; }
+}
+
+.github-button, .discord-button {
+  transition: transform 0.3s ease;
+}
+
+.github-button:hover, .discord-button:hover {
+  transform: scale(1.1);
+}
+
+.my-skill {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.front-text {
+  margin-top: 2rem;
+}
